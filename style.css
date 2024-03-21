@@ -1,0 +1,98 @@
+body{
+ position: absolute;
+width: 100%;
+height: 100%;
+}
+#esterno{
+	position: relative;
+	height:100%;
+	width:100%;
+	background:url("background.jpg") no-repeat;
+	background-size: cover;
+}
+/*
+
+  Sposta l'angolo in alto a sinistra del contenitore con id interno a 
+  metà pagina con le proprietà top e left. 
+  E poi aggiusta al centro il contenitore con la proprietà transform, 
+  traslando (cioè, spostando) il contenitore a metà a sinistra e a metà in alto
+
+*/
+
+#interno{
+	position:absolute;
+	transform: translate(-50%, -50%);
+	top:50%;
+	left:50%;
+	width:600px;
+	border-radius: 10px;
+	padding: 40px;
+}
+#sfondo-trasparente {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#logo{
+	width: 150px;
+}
+
+#intestazione{
+ color: #00dd00;
+ font-size: 20px;
+}
+ul#elenco {
+    background: #00dd00;
+    padding: 5px;
+}
+
+#elenco li {
+    list-style: none;
+    display: inline;
+    padding: 0 10px;
+    background: white;
+    border-radius: 3px;
+}
+
+.titolo-sezione {
+    color: white;
+    font-weight: bold;
+}
+
+.sottotitolo-sezione {
+    color: lightgrey;
+    font-size: 12px;
+}
+.carica-sezione {
+    color: white;
+    font-size: 13px;
+}
+
+.carica{
+    height: 15px;
+}
+
+#carica1{
+    width: 40%;
+    background: orange;
+}
+
+#carica2{
+    width: 60%;
+    background: #00dd00;
+}
+
+#carica3{
+    width: 20%;
+    background: red;
+}
+
+.sezione{
+	margin-bottom: 20px;
+}
